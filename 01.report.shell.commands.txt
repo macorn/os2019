@@ -7,7 +7,7 @@ Enter new UNIX password:
 Retype new UNIX password: 
 passwd: password updated successfully
 macorn@macorn-GL552VX:~$ date
-Thứ tư, 03 Tháng 4 năm 2019 09:06:56 +07
+Wed 03 Apr 2019 10:16:56 +07
 macorn@macorn-GL552VX:~$ hostname
 macorn-GL552VX
 macorn@macorn-GL552VX:~$ arch

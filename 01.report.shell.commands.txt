@@ -1,0 +1,59 @@
+macorn@macorn-GL552VX:~$ echo hello world
+hello world
+macorn@macorn-GL552VX:~$ passwd
+Changing password for macorn.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+macorn@macorn-GL552VX:~$ date
+Thứ tư, 03 Tháng 4 năm 2019 09:06:56 +07
+macorn@macorn-GL552VX:~$ hostname
+macorn-GL552VX
+macorn@macorn-GL552VX:~$ arch
+x86_64
+macorn@macorn-GL552VX:~$ uname -a
+Linux macorn-GL552VX 4.18.0-17-generic #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+macorn@macorn-GL552VX:~$ dmesg
+[    0.000000] microcode: microcode updated early to revision 0xc6, date = 2018-04-17
+[    0.000000] Linux version 4.18.0-17-generic (buildd@lgw01-amd64-021) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 (Ubuntu 4.18.0-17.18~18.04.1-generic 4.18.20)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.18.0-17-generic root=UUID=74691b93-9ca7-491e-8600-5a975c5eba92 ro nomodeset quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'macorn@macorn-GL552VX:~$ uptime
+macorn@macorn-GL552VX:~$ uptime
+ 09:07:48 up 27 min,  1 user,  load average: 0,58, 0,46, 0,43
+macorn@macorn-GL552VX:~$ whoami
+macorn
+macorn@macorn-GL552VX:~$ who
+macorn   :0           2019-04-03 08:40 (:0)
+macorn@macorn-GL552VX:~$ id
+uid=1000(macorn) gid=1000(macorn) groups=1000(macorn),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+macorn@macorn-GL552VX:~$ last
+macorn   :0           :0               Wed Apr  3 08:40   still logged in
+reboot   system boot  4.18.0-17-generi Wed Apr  3 08:40   still running
+macorn   :0           :0               Wed Apr  3 08:19 - 08:38  (00:18)
+reboot   system boot  4.18.0-17-generi Wed Apr  3 08:19 - 08:38  (00:19)
+macorn   :0           :0               Wed Apr  3 07:55 - 07:57  (00:02)
+reboot   system boot  4.18.0-17-generi Wed Apr  3 07:55 - 07:57  (00:02)
+
+wtmp begins Wed Apr  3 07:55:05 2019
+macorn@macorn-GL552VX:~$ figner
+
+Command 'figner' not found, did you mean:
+
+  command 'finger' from deb finger
+
+Try: sudo apt install <deb name>
+
+macorn@macorn-GL552VX:~$ w
+ 09:09:16 up 29 min,  1 user,  load average: 0,23, 0,39, 0,41
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+macorn   :0       :0               08:40   ?xdm?  29.23s  0.01s /usr/lib/gdm3/g
+

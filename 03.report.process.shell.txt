@@ -1,0 +1,22 @@
+macorn@macorn-GL552VX:~$ ps man
+  PID TTY      STAT   TIME COMMAND
+  908 tty7     -      0:16 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/ru
+    - -        Ssl+   0:14 -
+    - -        Ssl+   0:01 -
+  911 tty1     -      0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    - -        Ss+    0:00 -
+ 1570 pts/0    -      0:00 bash
+    - -        Ss+    0:00 -
+ 2725 pts/1    -      0:00 bash
+    - -        Ss     0:00 -
+ 2733 pts/1    -      0:00 ps man
+    - -        R+     0:00 -
+macorn@macorn-GL552VX:~$ ps man | grep gnome-calculator
+ 2814 pts/2    -      0:00 gnome-calculator
+ 2821 pts/1    -      0:00 grep --color=auto gnome-calculator
+macorn@macorn-GL552VX:~$ cat /proc/2814/status
+State:	S (sleeping)
+macorn@macorn-GL552VX:~$ kill -s STOP 2814
+macorn@macorn-GL552VX:~$ kill -s CONT 2814
+macorn@macorn-GL552VX:~$ kill -s KILL 2814
+

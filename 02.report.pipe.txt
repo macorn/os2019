@@ -1,0 +1,11 @@
+macorn@macorn-GL552VX:~$ ls -la | grep list
+macorn@macorn-GL552VX:~$ wc -l /etc/passwd
+40 /etc/passwd
+macorn@macorn-GL552VX:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8058392      782100     6182852      180644     1093440     6841460
+Swap:       1801804           0     1801804
+macorn@macorn-GL552VX:~$ cat /proc/cpuinfo | grep processor | wc -l
+8
+macorn@macorn-GL552VX:/usr/share/backgrounds/linuxmint-tara$ find -name "*.jpg" | wc -l
+22

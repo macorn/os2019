@@ -1,0 +1,14 @@
+macorn@macorn-GL552VX:~$ grep systemd /proc/sched_debug
+ S systemd-logind   813        81.756331     29756   120         0.000000       921.896632         0.000000 0 0 /autogroup-57
+ S        systemd   949        -7.202552        95   120         0.000000        82.319576         0.000000 0 0 /autogroup-87
+ Ssystemd-timesyn   783         6.040025        34   120         0.000000        20.004323         0.000000 0 0 /autogroup-37
+ Ssystemd-journal   396        43.307060       793   119         0.000000       223.343368         0.000000 0 0 /autogroup-11
+ Ssystemd-resolve   785        24.206261       299   120         0.000000       124.026945         0.000000 0 0 /autogroup-39
+ S  systemd-udevd   422       289.283574       347   120         0.000000       224.642016         0.000000 0 0 /autogroup-20
+ S        systemd     1       381.872143      1606   120         0.000000      1366.577939         0.000000 0 0 /autogroup-2
+macorn@macorn-GL552VX:~$ grep switch /proc/1/sched
+nr_switches                                  :                 1607
+nr_voluntary_switches                        :                 1349
+nr_involuntary_switches                      :                  258
+
+

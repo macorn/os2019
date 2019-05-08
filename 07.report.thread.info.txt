@@ -1,0 +1,8 @@
+macorn@macorn-GL552VX:~$ ps -e | grep firefox
+ 2130 ?        00:00:05 firefox
+macorn@macorn-GL552VX:~$ ps -o nlwp 2130
+NLWP
+  65
+macorn@macorn-GL552VX:~$ ls /proc/2130/task | wc -w
+63
+
